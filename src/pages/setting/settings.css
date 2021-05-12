@@ -1,0 +1,1143 @@
+*{
+   margin: 0;
+   padding: 0;
+   font-family: "Open Sans", sans-serif 
+ !important;
+ box-sizing: border-box;
+ color: #5e595e;
+}
+
+body{
+	background-color: #f7f8fc;
+}
+
+
+
+.setting-wrapper{
+  display: block;
+	width: 100%;
+} 
+
+.setting-header{
+	position: fixed;
+	z-index: 3000;
+	top: 0;
+	right: 0;
+	left: 0;
+  width: 100%;
+	display: block;
+	padding: 18px 20px;
+	background-color: #0b68e8;
+}
+
+.setting-header .setting-links{
+  display: none;
+}
+
+
+.setting-logo .icon-logo{
+  margin: 10px 0;
+	height: 22px;
+	cursor: pointer;
+	float: left;
+}
+
+.setting-logo .text-logo{
+	display: none;
+}
+
+.setting-header .setting-nav-links {
+     float: right;
+     display: grid;
+     grid-template-columns: 0.5fr 1.5fr;
+     grid-template-areas: "bellImg user";
+}
+
+
+.setting-header .setting-nav-links  .bellImg{
+  grid-area: bellImg;
+      width: 20px;
+      margin: auto 0 auto 60px;
+      cursor: pointer;
+}
+
+.setting-header .setting-nav-links  .bellImg:hover{
+  width: 22px;
+}
+
+
+
+.setting-header .setting-nav-links .notification{
+     display: none;
+     position: fixed;
+     right: 40%;
+     left: 5%;
+     top: 8%;
+     margin: auto;
+     background-color: #fff;
+     padding: 50px 20px;
+    z-index: 2000;
+    width: 66%;
+    border-radius: 4px;
+    box-shadow: 0px 0px 3px #111;
+}
+
+.setting-header .setting-nav-links .notification .bell-logo{ 
+  background-image: url('../img/bell.png');
+  background-color:#e3eefd;;
+ background-size: 40%;
+ width: 76px;
+ height: 76px;
+ padding: 23px 33px;
+ background-position: center;
+ background-repeat: no-repeat;
+ border-radius: 50%;
+ margin: auto;
+}
+
+
+.setting-header .setting-nav-links .notification .notification-header{
+    font-size: 16px;
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    
+}
+
+.setting-header .setting-nav-links .notification .notification-text{
+    font-size: 12px;
+    text-align: center;
+    margin-top: 30px;
+    
+}
+
+
+
+.setting-header .setting-nav-links .setting-header-user{
+     grid-area: user;
+     margin: auto;
+     cursor: pointer;
+}
+
+
+.setting-header .setting-nav-links .setting-header-user img{
+    width: 40px;
+    height: 40px;
+    margin: 0 2px 0 15px;
+}
+
+.setting-header .setting-nav-links .setting-header-user .username{
+    display: none;
+}
+
+.setting-header .setting-nav-links .setting-header-user .d-arr{
+    display: inline-block;
+    margin:auto 0;
+    width: 30px;
+    height: 30px;
+}
+
+.setting-header .setting-nav-links .setting-header-user .user-setting{
+    display: none;
+     position: fixed;
+     right: 5%;
+     left: 15%;
+     top: 9%;
+     margin: auto;
+     background-color: #fff;
+     padding: 15px 20px;
+    z-index: 2000;
+    width: 80%;
+    border-radius: 4px;
+    box-shadow: 0px 0px 3px #111;
+}
+
+.setting-header .setting-nav-links .setting-header-user .user-setting h4{
+  font-size: 20px;
+  margin: 0 0 10px;
+  font-weight: 700;
+}
+
+.setting-header .setting-nav-links .setting-header-user .user-setting p{
+  text-align: center;
+  padding: 0 12px 0 0;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.setting-header .setting-nav-links .setting-header-user .user-setting .user-smart-link{
+  display: block;
+background-color: #0b68e8;
+    color:#fff;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 10px 22px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+
+}
+
+
+.setting-header .setting-nav-links .setting-header-user .user-setting .user-smart-link:hover{
+  filter: brightness(95%);
+  box-shadow: 0.2px 0.2px 1px #111;
+}
+
+.setting-header .setting-nav-links .setting-header-user .user-setting ul{
+  display: block;
+  margin: 10px 0;
+}
+
+.setting-header .setting-nav-links .setting-header-user .user-setting ul li{
+    border-top: 1px solid #a6a6a6;
+    padding: 10px 0;
+    list-style: none;
+    cursor: pointer;
+}
+
+.setting-header .setting-nav-links .setting-header-user .user-setting ul .hidden{
+    border-top: 1px solid #a6a6a6;
+    padding: 10px 0;
+    list-style: none;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+.setting-header .setting-nav-links .setting-header-user .user-setting ul li:hover{
+   background-color: #f7f7f7;
+
+ }
+
+.setting-header .setting-nav-links .setting-header-user .user-setting ul li span{
+   background-color: #b1e7c5;
+   padding: 2px 5px;
+   border-radius: 3px;
+
+}
+
+
+.setting-header .setting-nav-links .setting-header-user .user-setting ul li a{
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+
+.pref{
+  margin:100px 0 0;
+}
+
+.pref h2{
+  font-size: 20px;
+  margin-bottom: 30px;
+  padding:  5px 30px;
+}
+
+.pref .pref-box{
+display: grid;
+grid-template-columns: 0.5fr 1.5fr;
+grid-template-areas:
+ "pref-box-planet pref-box-para"
+"pref-box-form pref-box-form" 
+;
+  padding: 5px 20px;
+  background-color: #fff;
+  border: 1px solid #dde0e5;
+  margin: 0 auto 20px;
+  width: 90%;
+  height: 100px;
+  box-shadow: 0 0 5px #f1f1f1;
+  border-radius: 10px;
+}
+
+.pref .pref-box img{
+  grid-area: pref-box-planet;
+  width: 40px;
+}
+
+.pref .pref-box p{
+  margin: 10px 0;
+  grid-area: pref-box-para;
+  text-align: left;
+}
+
+.pref .pref-box .pref-box-form{
+  grid-area: pref-box-form;
+  width: 100%;
+}
+.pref .pref-box .pref-box-form select{
+  width: 100%;
+  padding:0 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 15px;
+}
+
+
+.pref .pref-box .pref-box-form select:focus{
+   border-color:  #0b68e8;
+}
+
+
+.privacy{
+  margin:10px 0;
+}
+
+.privacy h2{
+  font-size: 20px;
+  padding:  5px 30px;
+}
+
+.privacy .change-pwd-box {
+display: grid;
+grid-template-columns: 0.5fr 1.5fr;
+grid-template-areas:
+ "change-pwd-box change-pwd-para"
+;
+  padding: 5px 20px;
+  background-color: #fff;
+  border: 1px solid #dde0e5;
+  margin: 20px auto;
+  width: 90%;
+  height: 100px;
+  box-shadow: 0 0 5px #f1f1f1;
+  border-radius: 10px;
+}
+
+.privacy .change-pwd-box  img{
+  display: block;
+  margin: auto 30px auto 0;
+  grid-area: change-pwd-box;
+  width: 40px;
+}
+
+.privacy .change-pwd-box p{
+  font-size: 16px;
+  display: block;
+  margin: auto 0;
+  color: #0b68e8;
+  grid-area: change-pwd-para;
+  text-align: left;
+}
+
+
+
+.privacy .cookies {
+display: grid;
+grid-template-columns: 0.5fr 1.5fr;
+grid-template-areas:
+ "cookies-img cookies-para"
+;
+  padding: 5px 20px;
+  background-color: #fff;
+  border: 1px solid #dde0e5;
+  margin: 20px auto;
+  width: 90%;
+  height: 100px;
+  box-shadow: 0 0 5px #f1f1f1;
+  border-radius: 10px;
+}
+
+.privacy .cookies  img{
+  display: block;
+  margin: auto 30px auto 0;
+  grid-area: cookies-img;
+  width: 40px;
+}
+
+.privacy .cookies p{
+  font-size: 16px;
+  display: block;
+  margin: auto 0;
+  color: #0b68e8;
+  grid-area: cookies-para;
+  text-align: left;
+}
+
+.privacy .export {
+display: grid;
+grid-template-columns: 0.5fr 1.5fr;
+grid-template-areas:
+ "export-img export-para"
+;
+  padding: 5px 20px;
+  background-color: #fff;
+  border: 1px solid #dde0e5;
+  margin: 20px auto;
+  width: 90%;
+  height: 100px;
+  box-shadow: 0 0 5px #f1f1f1;
+  border-radius: 10px;
+}
+
+.privacy .export  img{
+  display: block;
+  margin: auto 30px auto 0;
+  grid-area: export-img;
+  width: 40px;
+}  
+
+.privacy .export p{
+  font-size: 16px;
+  display: block;
+  margin: auto 0;
+  color: #0b68e8;
+  grid-area: export-para;
+  text-align: left;
+}
+
+  .privacy .delete {
+display: grid;
+grid-template-columns: 0.5fr 1.5fr;
+grid-template-areas:
+ "delete-img delete-para"
+ ". delete-span"
+;
+  padding: 5px 20px;
+  background-color: #fff;
+  border: 1px solid #dde0e5;
+  margin: 20px auto;
+  width: 90%;
+  height: 100px;
+  box-shadow: 0 0 5px #f1f1f1;
+  border-radius: 10px;
+}
+
+.privacy .delete img{
+  display: block;
+  margin: auto 30px auto 0;
+  grid-area: delete-img;
+  width: 40px;
+}  
+
+.privacy .delete p{
+  font-size: 16px;
+  display: block;
+  margin: auto 0;
+  color: #0b68e8;
+  grid-area: delete-para;
+  text-align: left;
+}
+
+.privacy .delete span{
+  font-size: 16px;
+  display: block;
+ text-align: left;
+  color: #0b68e8;
+  grid-area: delete-span;
+}
+
+  .privacy .review {
+display: grid;
+grid-template-columns: 0.5fr 1.5fr;
+grid-template-areas:
+ "review-img review-para"
+;
+  padding: 5px 20px;
+  background-color: #fff;
+  border: 1px solid #dde0e5;
+  margin: 20px auto 100px;
+  width: 90%;
+  height: 100px;
+  box-shadow: 0 0 5px #f1f1f1;
+  border-radius: 10px;
+}
+
+.privacy .review img{
+  display: block;
+  margin: auto 30px auto 0;
+  grid-area: review-img;
+  width: 40px;
+}  
+
+.privacy .review p{
+  font-size: 16px;
+  display: block;
+  margin: auto 0;
+  color: #0b68e8;
+  grid-area: review-para;
+  text-align: left;
+}
+
+
+.bottom-nav{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "home search job s-prof";
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 1px 0 2px #111;
+}
+
+.bottom-nav .home{
+  grid-area: home;
+   display: grid;
+   grid-template-areas: 
+   "home-img"
+   "home-link";
+   width: 20px;
+}
+
+.bottom-nav .home img{
+  grid-area: home-img; 
+  width: 20px;
+ margin: auto;
+ cursor: pointer;
+}
+
+
+.bottom-nav .home a{
+  grid-area: home-link;
+  font-size: 13px;
+  text-decoration: none;
+ margin: 0 18px;
+}
+
+
+.bottom-nav .search{
+  grid-area: search;
+   display: grid;
+   grid-template-areas: 
+   "search-img"
+   "search-link";
+   width: 20px;
+}
+
+.bottom-nav .search img{
+  grid-area: search-img; 
+  width: 20px;
+  background-color:#fff;
+ margin: auto;
+ cursor: pointer;
+}
+
+
+.bottom-nav .search a{
+  color:#111;
+  grid-area: search-link;
+  font-size: 13px;
+  text-decoration: none;
+ margin: 0 18px;
+}
+
+
+.bottom-nav .job{
+  grid-area: job;
+   display: grid;
+   grid-template-areas: 
+   "job-img"
+   "job-link";
+   width: 50px;
+   margin: auto;
+}
+
+.bottom-nav .job img{
+  grid-area: job-img; 
+  width: 20px;
+ margin: auto;
+ cursor: pointer;
+}
+
+
+.bottom-nav .job a{
+  grid-area: job-link;
+  font-size: 13px;
+  text-decoration: none;
+  margin: auto;
+}
+
+.bottom-nav .s-prof{
+  grid-area: s-prof;
+   display: grid;
+   grid-template-areas: 
+   "s-prof-img"
+   "s-prof-link";
+   width: 20px;
+}
+
+.bottom-nav .s-prof img{
+  grid-area: s-prof-img; 
+ border-radius: 50%;
+  width: 20px;
+ margin: auto;
+ cursor: pointer;
+}
+
+
+.bottom-nav .s-prof a{
+  grid-area: s-prof-link;
+  font-size: 13px;
+  text-decoration: none;
+ margin: 0 18px;
+}
+
+
+
+@media only screen and (min-width: 500px){
+
+.setting-header .setting-nav-links .notification{
+     right: 5%;
+     left: 5%;
+     top: 15%;
+    width: 50%;  
+}
+
+.setting-header .setting-nav-links .setting-header-user .user-setting{
+     left: 0%;
+     top: 18%;
+
+}
+
+
+
+}
+
+
+
+@media only screen and (min-width: 640px){
+
+
+   .setting-logo .icon-logo{
+	display: none;
+    }
+
+
+.setting-header .setting-nav-links .setting-header-user .user-setting ul .hidden{
+    display: block;
+}
+
+	.setting-logo .text-logo{
+	display: block;
+	height: 16px;
+	cursor: pointer;
+	float: left;
+  margin: 10px 0;
+    }
+
+ 
+.setting-header .setting-nav-links {
+      width: 400px;
+}
+
+.setting-header .setting-nav-links .notification{
+     right: 38%;
+    width: 40%;
+  
+}
+
+.setting-header .setting-nav-links  .bellImg{
+      width: 20px;
+      margin: auto 0 auto 100px;
+      cursor: pointer;
+}
+
+
+.setting-header .setting-nav-links .setting-header-user img{
+   display: inline-block;
+}
+
+  .setting-header .setting-nav-links .setting-header-user .username{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    overflow: hidden;
+    margin: 10px 0 0 0;
+}
+
+.bottom-nav{
+ display: none;
+}
+
+}
+
+@media only screen and (min-width: 737px){
+
+.setting-header .setting-nav-links .setting-header-user .d-arr{
+   margin: auto 10px auto 0;
+}
+
+.setting-header .setting-nav-links .setting-header-user .user-setting{
+     right: -45%; 
+     top: 18%;
+    width: 50%;
+}
+
+
+.setting-header .setting-nav-links .notification{
+     right: 20%;
+    width: 35%;
+  
+}
+
+}
+
+
+@media only screen and (min-width: 960px){
+
+  .setting-bg {
+  margin: 0 auto 120px;
+}
+
+
+  .setting-header{
+  padding: 15px 20px;
+
+}
+
+
+
+.setting-logo .text-logo{
+   margin: 20px 0 0;
+}
+
+.setting-header .setting-nav-links .setting-header-user .user-setting{
+     right: -56%; 
+     top: 13%;
+    width: 40%;
+}
+
+
+.setting-header .setting-nav-links .notification{
+     right: -10%;
+     top: 11%;
+    width: 25%;
+  
+}
+
+
+  .setting-header .setting-links{
+  display: inline-block;
+  margin: auto 0 auto 60px;
+
+}
+
+  .setting-header .setting-links li{
+    display: inline-block;
+  list-style: none;
+  padding: 0 18px 0;
+}
+
+
+.setting-header .setting-links li a{
+  display: inline-block;
+    font-size: 16px;
+    color: #fff;
+    overflow: hidden;
+    margin: 12px 0 0;
+   text-decoration: none;
+   transition: all 0.1s ease-in-out;
+}
+
+.setting-header .setting-links li a:hover{
+  border-bottom: 4px solid #fff;
+}
+
+
+.pref h2{
+  font-size: 20px;
+  margin-bottom: 30px;
+  padding:  5px 50px;
+}
+
+
+.pref .pref-box{
+display: grid;
+grid-template-columns: 0.2fr 0.5fr 1.5fr;
+grid-template-areas:
+ "pref-box-planet pref-box-para pref-box-form"
+;
+}
+
+
+.pref .pref-box img{
+  margin: auto 70px auto 0;
+}
+
+.pref .pref-box p{
+  display: block;
+  margin: auto 50px auto 0;
+}
+
+.pref .pref-box .pref-box-form{
+  margin: auto;
+}
+
+.privacy h2{
+  font-size: 20px;
+  padding:  5px 50px;
+}
+
+
+
+
+.privacy .change-pwd-box {
+display: grid;
+grid-template-columns: 0.2fr 1.8fr;
+grid-template-areas:
+ "change-pwd-box change-pwd-para"
+;
+}
+
+
+.privacy .cookies {
+display: grid;
+grid-template-columns: 0.2fr 1.8fr;
+grid-template-areas:
+ "cookies-img cookies-para"
+;
+}
+
+
+.privacy .export {
+display: grid;
+grid-template-columns: 0.2fr 1.8fr;
+grid-template-areas:
+ "export-img export-para"
+;
+}
+
+ .privacy .delete {
+display: grid;
+grid-template-columns: 0.2fr 1.8fr;
+grid-template-areas:
+ "delete-img delete-para"
+ ". delete-span"
+;
+}
+
+ .privacy .review {
+display: grid;
+grid-template-columns: 0.2fr 1.8fr;
+grid-template-areas:
+ "review-img review-para"
+ ". review-span"
+;
+}
+
+.pref .pref-box .pref-box-form{
+  grid-area: pref-box-form;
+  width: 70%;
+}
+
+
+}
+
+@media only screen and (min-width: 1080px){
+.setting-div .setting-img img{
+   grid-area: setting-img; 
+   margin-left: 220px;
+
+}
+
+.setting-div .setting-text{
+   grid-area: setting-text; 
+    margin: 80px 120px auto 0;
+}
+
+
+.setting-header .setting-nav-links .notification{
+     right: -15%;
+
+  
+}
+
+.setting-header .setting-nav-links .setting-header-user .user-setting{
+     right: -67%; 
+     top: 11%;
+    width: 30%;
+}
+
+.pref h2{
+  padding:  5px 60px;
+}
+
+.privacy h2{
+
+  padding:  5px 60px;
+}
+
+
+
+
+
+
+}
+
+
+@media only screen and (min-width: 1400px){
+
+.setting-wrapper{
+  width: 90%;
+  margin: auto;
+
+}
+
+ .settings-wrapper{
+    width: 90%;
+    margin: auto;
+  }
+
+
+
+.setting-wrapper-two .about-me .about-me-suggestion{
+  top: 500%;
+} 
+
+.setting-header .setting-nav-links .notification{
+     right: -32%;
+     top: 7%;
+   width: 20%;
+  
+}
+
+.setting-header .setting-nav-links .setting-header-user .user-setting{
+     right: -70%; 
+     top: 9%;
+    width: 25%;
+}
+
+.pref h2{
+  padding:  5px 60px;
+}
+
+.privacy h2{
+  padding:  5px 60px;
+}
+
+
+
+
+}
+
+@media only screen and (min-width: 1600px){
+
+
+.setting-wrapper{
+  width: 80%;
+  margin: auto;
+
+}
+
+
+  .settings-wrapper{
+    width: 80%;
+    margin: auto;
+  }
+
+.setting-div .setting-img img{
+   grid-area: setting-img; 
+   margin-left: 380px;
+
+}
+
+.setting-div .setting-text{
+   grid-area: setting-text; 
+    margin: 80px 280px auto 0;
+}
+
+.setting-header .setting-nav-links .notification{
+     right: -38%;
+  
+}
+
+
+.setting-header .setting-nav-links .setting-header-user .user-setting{
+     right: -78%; 
+     top: 8%;
+    width: 20%;
+}
+
+.pref h2{
+  padding:  5px 70px;
+}
+
+.privacy h2{
+  padding:  5px 70px;
+}
+
+.pref .pref-box .pref-box-form{
+  grid-area: pref-box-form;
+  width: 60%;
+}
+
+
+
+}
+
+@media only screen and (min-width: 1800px){
+
+.setting-wrapper{
+  width: 75%;
+  margin: auto;
+
+}
+
+.setting-div .setting-img img{
+   grid-area: setting-img; 
+   margin-left: 500px;
+
+}
+
+.setting-div .setting-text{
+   grid-area: setting-text; 
+    margin: 80px 340px auto 0;
+}
+
+.setting-header .setting-nav-links .notification{
+     right: -40%;
+  
+}
+
+.setting-header .setting-nav-links .setting-header-user .user-setting{
+     right: -78%; 
+     top: 8%;
+    width: 20%;
+}
+
+.setting-header .setting-nav-links .setting-header-user .user-setting{
+     right: -78%; 
+     top: 8%;
+    width: 20%;
+}
+
+.pref h2{
+  padding:  5px 80px;
+}
+
+.privacy h2{
+  padding:  5px 80px;
+}
+
+
+}
+
+
+@media only screen and (min-width: 2000px){
+
+.setting-wrapper{
+  width: 70%;
+  margin: auto;
+
+}
+
+.settings-wrapper{
+    width: 70%;
+    margin: auto;
+  }
+
+.setting-div .setting-img img{
+   grid-area: setting-img; 
+   margin-left: 600px;
+
+}
+
+.setting-div .setting-text{
+   grid-area: setting-text; 
+    margin: 80px 400px auto 0;
+}
+
+.setting-header .setting-nav-links .notification{
+      top: 5%;
+     right: -50%;
+    width: 15%;
+}
+
+
+.setting-header .setting-nav-links .setting-header-user .user-setting{
+     top: 6%; 
+}
+
+.pref h2{
+  padding:  5px 100px;
+}
+
+.privacy h2{
+  padding:  5px 100px;
+}
+
+
+
+
+}
+
+
+
+@media only screen and (min-width: 2200px){
+
+.setting-wrapper{
+  width: 60%;
+  margin: auto;
+
+}
+
+.settings-wrapper{
+    width: 60%;
+    margin: auto;
+  }
+
+.setting-header .setting-nav-links .notification{
+      top: 5%;
+     right: -52%;
+    width: 15%;
+}
+
+.setting-header .setting-nav-links .setting-header-user .user-setting{
+     top: 5%;
+    width: 16%;
+}
+
+
+
+}
+
+
+
+@media only screen and (min-width: 2560px){
+
+.setting-wrapper{
+  width: 50%;
+  margin: auto;
+
+}
+
+
+  .settings-wrapper{
+    width: 50%;
+    margin: auto;
+  }
+
+
+.setting-header .setting-nav-links .notification{
+      top: 4%;
+     right: -61%;
+    width: 10%;
+}
+
+.setting-header .setting-nav-links .setting-header-user .user-setting{
+     right: -82%; 
+     top: 4%;
+    width: 15%;
+}
+
+.pref h2{
+  padding:  5px 120px;
+}
+
+.privacy h2{
+  padding:  5px 120px;
+}
+
+
+}

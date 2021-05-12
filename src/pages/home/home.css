@@ -1,0 +1,1352 @@
+*{
+   margin: 0;
+   padding: 0;
+   font-family: "Open Sans", sans-serif 
+ !important;
+ box-sizing: border-box;
+ color: #5e595e;
+}
+
+body{
+	background-color: #f7f8fc;
+}
+
+
+.home-wrapper{
+  display: block;
+	width: 100%;
+  padding: 0 8px;
+}
+
+.home-header{
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	right: 0;
+	left: 0;
+  width: 100%;
+	display: block;
+	padding: 18px 20px;
+	background-color: #0b68e8;
+}
+
+.home-header .home-links{
+  display: none;
+}
+
+
+.home-logo .icon-logo{
+  margin: 10px 0;
+	height: 22px;
+	cursor: pointer;
+	float: left;
+}
+
+.home-logo .text-logo{
+	display: none;
+}
+
+.home-header .home-nav-links {
+     float: right;
+     display: grid;
+     grid-template-columns: 0.5fr 1.5fr;
+     grid-template-areas: "bellImg user";
+}
+
+
+
+.home-header .home-nav-links  .bellImg{
+  grid-area: bellImg;
+      width: 20px;
+      margin: auto 0 auto 60px;
+      cursor: pointer;
+}
+
+.home-header .home-nav-links  .bellImg:hover{
+  width: 22px;
+}
+
+.home-header .home-nav-links .notification{
+     display: none;
+     position: fixed;
+     right: 40%;
+     left: 5%;
+     top: 8%;
+     margin: auto;
+     background-color: #fff;
+     padding: 50px 20px;
+    z-index: 2000;
+    width: 66%;
+    border-radius: 4px;
+    box-shadow: 0px 0px 3px #111;
+}
+
+.home-header .home-nav-links .notification .bell-logo{ 
+  background-image: url('../img/bell.png');
+  background-color:#e3eefd;
+ background-size: 40%;
+ width: 76px;
+ height: 76px;
+ padding: 23px 33px;
+ background-position: center;
+ background-repeat: no-repeat;
+ border-radius: 50%;
+ margin: auto;
+}
+
+
+.home-header .home-nav-links .notification .notification-header{
+    font-size: 16px;
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0; 
+}
+
+.home-header .home-nav-links .notification .notification-text{
+    font-size: 12px;
+    text-align: center;
+    margin-top: 30px;   
+}
+
+.home-header .home-nav-links .home-header-user{
+     grid-area: user;
+     margin: auto;
+     cursor: pointer;
+}
+
+.home-header .home-nav-links .home-header-user img{
+    width: 40px;
+    height: 40px;
+    margin: 0 2px 0 15px;
+}
+
+.home-header .home-nav-links .home-header-user .username{
+    display: none;
+}
+
+.home-header .home-nav-links .home-header-user .d-arr{
+     display: inline-block;
+    margin:auto 0;
+    width: 30px;
+    height: 30px;
+}
+
+.home-header .home-nav-links .home-header-user .user-profile{
+    display: none;
+     position: fixed;
+     right: 5%;
+     left: 15%;
+     top: 9%;
+     margin: auto;
+     background-color: #fff;
+     padding: 15px 20px;
+    z-index: 2000;
+    width: 80%;
+    border-radius: 4px;
+    box-shadow: 0px 0px 3px #111;
+}
+
+.home-header .home-nav-links .home-header-user .user-profile h4{
+  font-size: 20px;
+  margin: 0 0 10px;
+  font-weight: 700;
+}
+
+.home-header .home-nav-links .home-header-user .user-profile p{
+  text-align: center;
+  padding: 0 12px 0 0;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.home-header .home-nav-links .home-header-user .user-profile .user-smart-link{
+  display: block;
+background-color: #0b68e8;
+    color:#fff;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 10px 22px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+
+}
+
+
+.home-header .home-nav-links .home-header-user .user-profile .user-smart-link:hover{
+  filter: brightness(95%);
+  box-shadow: 0.2px 0.2px 1px #111;
+}
+
+.home-header .home-nav-links .home-header-user .user-profile ul{
+  display: block;
+  margin: 10px 0;
+}
+
+.home-header .home-nav-links .home-header-user .user-profile ul li{
+    border-top: 1px solid #a6a6a6;
+    padding: 10px 0;
+    list-style: none;
+    cursor: pointer;
+}
+
+.home-header .home-nav-links .home-header-user .user-profile ul .hidden{
+    border-top: 1px solid #a6a6a6;
+    padding: 10px 0;
+    list-style: none;
+    cursor: pointer;
+    display: none;
+}
+
+.home-header .home-nav-links .home-header-user .user-profile ul li:hover{
+   background-color: #f7f7f7;
+ }
+
+.home-header .home-nav-links .home-header-user .user-profile ul li span{
+   background-color: #b1e7c5;
+   padding: 2px 5px;
+   border-radius: 3px;
+}
+
+
+.home-header .home-nav-links .home-header-user .user-profile ul li a{
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+/*important!!!*/
+.smart-profile {
+  background-color: #fff;
+      margin: 110px 20px 20px;
+      border-radius: 8px;
+     box-shadow: 0 0 2.5px #f1f1f1;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "smart-profile-text smart-profile-btn";
+}
+
+.smart-profile .smart-profile-text{
+      grid-area: smart-profile-text;
+      width: 180px;
+}
+
+
+.smart-profile .smart-profile-text p{
+  font-size: 16px;
+      padding: 0 0 20px;
+}
+
+.smart-profile .smart-profile-text h4{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.smart-profile .smart-profile-text .progress{
+        background-color: #ebedf5;
+        width: 100%;
+        border-radius: 15px;
+}
+
+.smart-profile .smart-profile-text .progress .completion{
+      background-color: #2193e8;
+    margin-bottom: 15px;
+    padding: 5%;
+   border-radius: 15px;
+  transition: background-color .4s ease-in-out,border-color .4s ease-in-out;
+
+}
+
+.smart-profile .smart-profile-text .progress .remain{
+width: 45%;
+
+}
+
+
+.smart-profile .smart-profile-text span{
+  display: block;
+text-align: center;
+color: #1259b7;
+
+}
+.smart-profile .smart-profile-btn{
+  grid-area: smart-profile-btn;
+    min-width: 100px;
+    min-height: 100px;
+   margin: auto;
+}
+
+.smart-profile .smart-profile-btn a{
+  display: inline-block;
+      color: #fff;
+    background-color: #0b68e8;
+    border: 2px solid #0b68e8;
+    font-weight: 600;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 30px;
+    padding: 8px 20px;
+    text-decoration: none;
+
+}
+
+.smart-profile .smart-profile-btn a:hover{
+    filter: brightness(95%);
+}
+
+.sticky{
+  position: fixed;
+  top: 30%;
+  right: 85%;
+  transform: rotate(270deg);
+  background-color: #0b68e8;
+  padding: 15px 10px;
+  border-radius: 5px;
+  opacity: 0.9;
+  transition: all 0.2s ease-in-out;
+}
+
+.sticky a{
+  color: #fff;
+  filter: blur(0px);
+  -webkit-filter:blur(0px);
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.sticky:hover{
+ box-shadow: 0px 0px 4px #111;
+ padding: 20px 10px 15px;
+
+}
+
+
+.job-application-link{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "application-link-title application-link-anchor";
+  padding: 20px;
+}
+
+.job-application-link h2{
+grid-area: application-link-title;
+font-size: 18px;
+margin: auto 0 0;
+}
+
+
+.job-application-link a{
+grid-area: application-link-anchor;
+display: inline-block;
+width: 120px;
+color: #0b68e8;
+    border: 2px solid #0b68e8;
+    font-weight: 600;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 30px;
+    padding: 8px;
+    text-decoration: none;
+    margin: auto 0 auto 80px;
+
+}
+
+.job-application-link a:hover{
+box-shadow: 0px 0px 1px #111;
+
+}
+
+
+
+
+
+
+.ev-application{
+   background-color: #fff;
+      margin: 0 20px 20px;
+      border-radius: 8px;
+     box-shadow: 0 0 2.5px #bbbbbb;
+      padding: 20px;
+}
+
+.ev-application .ev-application-text span{
+  display: inline-block;
+   background-color: #FFF5DF;
+   padding: 2px 6px;
+   min-width: 80px;
+   margin-bottom: 10px;
+   border-radius: 4px;
+}
+
+.ev-application .ev-application-text:hover{
+  background-color: #f9f9f9;
+}
+
+
+
+.ev-application .ev-application-text a{
+  text-decoration: none;
+  width: 100%;
+}
+
+.ev-application .ev-application-text p{
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.ev-application .ev-application-text .ev-loc .ev{
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.ev-application .ev-application-text .ev-loc .loc{
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.sigma-application{
+   background-color: #fff;
+      margin: 0 20px 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 2.5px #bbbbbb;
+      padding: 20px;
+}
+
+.sigma-application .sigma-application-text:hover{
+  background-color: #f9f9f9;
+}
+
+
+.sigma-application .sigma-application-text span{
+  display: inline-block;
+   background-color: #DEEEF9;
+   padding: 2px 6px;
+   min-width: 80px;
+   margin-bottom: 10px;
+   border-radius: 4px;
+   text-align: center;
+}
+
+.sigma-application .sigma-application-text a{
+  text-decoration: none;
+  width: 100%;
+}
+
+.sigma-application .sigma-application-text p{
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.sigma-application .sigma-application-text .sig-loc .sig{
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.sigma-application .sigma-application-text .sig-loc .loc{
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.sigma-application .sigma-application-text .sig-loc .loc img{
+  width: 13px;
+}
+
+.jobseeker-link{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "jobseeker-title jobseeker-anchor";
+  padding: 20px;
+}
+
+.jobseeker-link h2{
+grid-area: jobseeker-title;
+font-size: 18px;
+margin: auto 0;
+}
+
+
+.jobseeker-link a{
+grid-area: jobseeker-anchor;
+display: inline-block;
+width: 120px;
+color: #0b68e8;
+    border: 2px solid #0b68e8;
+    font-weight: 600;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 30px;
+    padding: 8px;
+    text-decoration: none;
+    margin: auto 0 auto 80px;
+
+}
+
+.jobseeker-link a:hover{
+box-shadow: 0px 0px 1px #111;
+
+}
+
+
+.container {
+  width: 100%;
+}
+
+.container .proactive-guide{
+    background-color: #fff;
+      margin: 0 20px 20px;
+      border-radius: 8px;
+     box-shadow: 0 0 2.5px #bbbbbb;
+      padding: 20px;
+}
+
+.container .proactive-guide img{
+  display: block;
+   margin: auto;
+   width: 90%;
+}
+
+.container .proactive-guide .proactive-guide-text a{
+  display: block;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 15px 0 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.container .proactive-guide .proactive-guide-text a:hover{
+  text-decoration: underline;
+}
+
+.container .proactive-guide .proactive-guide-text p{
+  font-size: 16px;
+
+}
+
+.container .proactive-guide .proactive-guide-text ul{
+  display: block;
+    width: 100%;
+}
+
+.container .proactive-guide .proactive-guide-text li{
+  list-style: none;
+  display: inline-block;
+  background-color: #e3eefd;
+  color: #0951b3;
+border-radius: 12px;
+padding: 4px 10px;
+margin: 10px 5px 0 0;
+ font-size: 12px;
+}
+
+
+
+.container .graduating-soon{
+   background-color: #fff;
+      margin: 0 20px 90px;
+      border-radius: 8px;
+     box-shadow: 0 0 2.5px #bbbbbb;
+      padding: 20px;
+}
+
+.container .graduating-soon img{
+   display: block;
+   margin: auto;
+   width: 90%;
+}
+
+.container .graduating-soon .graduating-soon-text a{
+  display: block;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 15px 0 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.container .graduating-soon .graduating-soon-text a:hover{
+  text-decoration: underline;
+}
+
+.container .graduating-soon .graduating-soon-text p{
+  font-size: 16px;
+}
+
+.container .graduating-soon .graduating-soon-text ul{
+  display: block;
+    width: 100%;
+}
+
+.container .graduating-soon .graduating-soon-text li{
+  list-style: none;
+  display: inline-block;
+  background-color: #e3eefd;
+  color: #0951b3;
+border-radius: 12px;
+padding: 4px 10px;
+margin: 10px 5px 0 0;
+ font-size: 12px;
+}
+
+
+.bottom-nav{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "home search job s-prof";
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 1px 0 2px #111;
+}
+
+.bottom-nav .home{
+  grid-area: home;
+   display: grid;
+   grid-template-areas: 
+   "home-img"
+   "home-link";
+   width: 20px;
+}
+
+.bottom-nav .home img{
+  grid-area: home-img; 
+  width: 20px;
+ margin: auto;
+ cursor: pointer;
+ background-color: #0b68e8;
+ border-radius: 50%;
+}
+
+
+.bottom-nav .home a{
+  grid-area: home-link;
+   color: #0b68e8;
+  font-size: 13px;
+  text-decoration: none;
+ margin: 0 18px;
+}
+
+
+.bottom-nav .search{
+  grid-area: search;
+   display: grid;
+   grid-template-areas: 
+   "search-img"
+   "search-link";
+   width: 20px;
+}
+
+.bottom-nav .search img{
+  grid-area: search-img; 
+  width: 20px;
+ margin: auto;
+ cursor: pointer;
+}
+
+
+.bottom-nav .search a{
+  grid-area: search-link;
+  font-size: 13px;
+  text-decoration: none;
+ margin: 0 18px;
+}
+
+
+.bottom-nav .job{
+  grid-area: job;
+   display: grid;
+   grid-template-areas: 
+   "job-img"
+   "job-link";
+   width: 50px;
+   margin: auto;
+}
+
+.bottom-nav .job img{
+  grid-area: job-img; 
+  width: 20px;
+ margin: auto;
+ cursor: pointer;
+}
+
+
+.bottom-nav .job a{
+  grid-area: job-link;
+  font-size: 13px;
+  text-decoration: none;
+  color:#111;
+  margin: auto;
+}
+
+.bottom-nav .s-prof{
+  grid-area: s-prof;
+   display: grid;
+   grid-template-areas: 
+   "s-prof-img"
+   "s-prof-link";
+   width: 20px;
+}
+
+.bottom-nav .s-prof img{
+  grid-area: s-prof-img; 
+  width: 20px;
+ margin: auto;
+ cursor: pointer;
+}
+
+.bottom-nav .s-prof a{
+  grid-area: s-prof-link;
+  font-size: 13px;
+  text-decoration: none;
+ margin: 0 18px;
+}
+
+
+
+@media only screen and (min-width: 500px){
+    .sticky{
+  top: 50%;
+  right: 90.5%;
+
+}
+
+.home-header .home-nav-links .notification{
+     right: 5%;
+     left: 5%;
+     top: 15%;
+    width: 50%;  
+}
+
+.home-header .home-nav-links .home-header-user .user-profile{
+     left: 0%;
+     top: 18%;
+
+}
+
+
+
+
+
+
+}
+
+
+
+@media only screen and (min-width: 640px){
+
+
+   .home-logo .icon-logo{
+	display: none;
+    }
+
+
+.home-header .home-nav-links .home-header-user .user-profile ul .hidden{
+    display: block;
+}
+
+	.home-logo .text-logo{
+	display: block;
+	height: 16px;
+	cursor: pointer;
+	float: left;
+  margin: 10px 0;
+    }
+
+
+.home-header .home-nav-links {
+      width: 400px;
+}
+
+.home-header .home-nav-links .notification{
+     right: 38%;
+    width: 40%;
+  
+}
+
+.home-header .home-nav-links  .bellImg{
+      width: 20px;
+      margin: auto 0 auto 100px;
+      cursor: pointer;
+}
+
+
+.home-header .home-nav-links .home-header-user img{
+   display: inline-block;
+}
+
+  .home-header .home-nav-links .home-header-user .username{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    overflow: hidden;
+    margin: 10px 0 0 0;
+}
+  
+
+.smart-profile {
+      padding: 20px;
+      height: 200px;
+      display: grid;
+      grid-template-columns: 1.5fr 0.5fr;
+      grid-template-areas: "smart-profile-text smart-profile-btn";
+}
+
+.smart-profile .smart-profile-text{
+      grid-area: smart-profile-text;
+     width: 350px;
+}
+
+.smart-profile .smart-profile-text .progress .completion{
+    padding: 2.5%;
+
+}
+
+.smart-profile .smart-profile-btn{
+  grid-area: smart-profile-btn;
+  min-width: 80px;
+  min-height: 80px;
+    
+}
+
+.sticky{
+  top: 50%;
+  right: 90%;
+
+}
+
+
+.job-application-link a{
+  padding: 7px 10px;
+    margin: auto 0 auto 200px;
+
+}
+
+.jobseeker-link a{
+  padding: 7px 10px;
+    margin: auto 0 auto 200px;
+
+}
+
+.ev-application{
+      margin: 0 20px 30px;
+}
+
+.graduating-soon{
+      margin: 0 20px 30px;
+}
+
+.bottom-nav{
+ display: none;
+}
+
+
+
+
+}
+
+@media only screen and (min-width: 737px){
+  .sticky{
+  top: 50%;
+  right: 92%;
+
+}
+
+.home-header .home-nav-links .home-header-user .user-profile{
+     right: -45%; 
+     top: 18%;
+    width: 50%;
+}
+
+
+.home-header .home-nav-links .notification{
+     right: 20%;
+    width: 35%;
+  
+}
+
+
+.job-application-link a{
+    margin: auto 0 auto 250px;
+
+}
+
+.jobseeker-link a{
+    margin: auto 0 auto 250px;
+
+}
+
+.home-header .home-nav-links .home-header-user .d-arr{
+ margin: auto 10px auto 0;
+}
+
+}
+
+
+
+
+
+@media only screen and (min-width: 960px){
+
+  .home-header{
+  padding: 15px 20px;
+
+}
+
+  .home-logo .text-logo{
+   margin: 20px 0 0;
+    }
+
+.home-header .home-nav-links .home-header-user .user-profile{
+     right: -56%; 
+     top: 13%;
+    width: 40%;
+}
+
+
+.home-header .home-nav-links .notification{
+     right: -10%;
+     top: 11%;
+    width: 25%;
+  
+}
+
+
+  .home-header .home-links{
+  display: inline-block;
+  margin: auto 0 auto 60px;
+
+}
+
+  .home-header .home-links li{
+    display: inline-block;
+  list-style: none;
+ padding: 0 18px 6px;
+}
+
+.home-header .home-links li a{
+  display: inline-block;
+    font-size: 16px;
+    color: #fff;
+    overflow: hidden;
+    margin: 18px 0 0 ;
+   text-decoration: none;
+   transition: all 0.1s ease-in-out;
+}
+
+
+.home-header .home-links li .active-page{
+   border-bottom: 4px solid #fff;
+}
+
+.home-header .home-links li a:hover{
+  border-bottom: 4px solid #fff;
+}
+
+
+.smart-profile {
+  background-color: #fff;
+      margin: 110px  20px 20px;
+      border-radius: 8px;
+     box-shadow: 0 0 2.5px #bbbbbb;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 1.5fr 0.5fr;
+      grid-template-areas: "smart-profile-text smart-profile-btn";
+}
+
+.smart-profile .smart-profile-text{
+      grid-area: smart-profile-text;
+      width: 640px;
+}
+
+.smart-profile .smart-profile-btn{
+  grid-area: smart-profile-btn;
+}
+
+.smart-profile .smart-profile-text .progress .completion{
+    padding: 1.5%;
+}
+
+.job-application-link a{
+    margin: auto 0 auto 330px;
+
+}
+
+.jobseeker-link a{
+    margin: auto 0 auto 330px;
+
+}
+
+.ev-application{
+  display: grid;
+  grid-template-columns: 0.3fr 1.7fr;
+  grid-template-areas: "ev-logo ev-application-text";
+}
+
+.ev-application img{
+ grid-area: ev-logo;
+}
+
+
+.ev-application .ev-application-text a {
+
+  grid-area: ev-application-text;
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "ev-loc ev-para ev-span";
+  margin: 20px 0 0 40px;
+  grid-gap: 50px;
+
+}
+
+.ev-application .ev-application-text a span{
+  grid-area: ev-span; 
+  margin: auto;
+   padding: 8px 40px;
+}
+
+.ev-application .ev-application-text a p{
+  grid-area: ev-para;
+  font-size: 16px;
+  margin: auto 0 auto 50px;
+}
+
+.ev-application .ev-application-text a .ev-loc{
+  grid-area: ev-loc;
+
+}
+
+.ev-application .ev-application-text a .ev-loc .ev{
+  margin-bottom: 20px;
+}
+
+.sigma-application{
+  display: grid;
+  grid-template-columns: 0.3fr 1.7fr;
+  grid-template-areas: "sigma-logo sigma-application-text";
+}
+
+.sigma-application img{
+ grid-area: sigma-logo;
+}
+
+
+.sigma-application .sigma-application-text a {
+  grid-area: sigma-application-text;
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "sigma-loc sigma-para sigma-span";
+  margin: 20px 0 0 40px;
+  grid-gap: 50px;
+
+}
+
+.sigma-application .sigma-application-text a span{
+  grid-area: sigma-span; 
+  margin: auto;
+   padding: 8px 40px;
+}
+
+.sigma-application .sigma-application-text a p{
+  grid-area: sigma-para;
+  font-size: 16px;
+  margin: auto 0 auto 0;
+
+}
+
+.sigma-application .sigma-application-text a .sig-loc{
+  grid-area: sigma-loc;
+
+}
+
+.sigma-application .sigma-application-text a .sig-loc .sig{
+  margin-bottom: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "proactive-guide graduating-soon";
+}
+
+.container .proactive-guide{
+   grid-area: proactive-guide;
+   display: block;
+   height: 600px;
+
+}
+
+
+.container .graduating-soon{
+   grid-area: graduating-soon;
+ }
+
+
+
+
+
+ .sticky{
+  right: 94%;
+
+}
+
+
+
+
+}
+
+
+
+@media only screen and (min-width: 1080px){
+
+
+  
+.job-application-link a{
+    margin: auto 0 auto 500px;
+
+}
+
+
+.sticky{
+  top: 30%;
+  right: 95%;
+}
+
+.home-header .home-nav-links .notification{
+     right: -15%;
+
+  
+}
+
+.home-header .home-nav-links .home-header-user .user-profile{
+     right: -67%; 
+     top: 11%;
+    width: 30%;
+}
+
+.container .proactive-guide img{
+  display: block;
+   margin: auto;
+   width: 50%;
+}
+
+.container .proactive-guide{
+   grid-area: proactive-guide;
+   display: block;
+   height: 700px;
+
+}
+
+
+  
+.jobseeker-link a{
+    margin: auto 0 auto 500px;
+
+}
+
+
+
+}
+
+
+@media only screen and (min-width: 1400px){
+
+.home-wrapper{
+  width: 90%;
+  margin: auto;
+
+}
+
+.home-header .home-nav-links .notification{
+     right: -32%;
+     top: 7%;
+   width: 20%;
+  
+}
+
+.home-header .home-nav-links .home-header-user .user-profile{
+     right: -70%; 
+     top: 9%;
+    width: 25%;
+}
+
+.container .proactive-guide{
+   grid-area: proactive-guide;
+   display: block;
+   height: 700px;
+
+}
+
+}
+
+@media only screen and (min-width: 1600px){
+
+.home-wrapper{
+  width: 80%;
+  margin: auto;
+
+}
+
+.home-header .home-nav-links .notification{
+     right: -38%;
+  
+}
+
+
+.home-header .home-nav-links .home-header-user .user-profile{
+     right: -78%; 
+     top: 8%;
+    width: 20%;
+}
+
+.container .proactive-guide{
+   grid-area: proactive-guide;
+   display: block;
+   height: 700px;
+
+}
+
+
+
+.sticky{
+  top: 30%;
+  right: 96%;
+}
+
+}
+
+@media only screen and (min-width: 1800px){
+
+.home-wrapper{
+  width: 75%;
+  margin: auto;
+
+}
+
+.home-header .home-nav-links .notification{
+     right: -40%;
+  
+}
+
+.home-header .home-nav-links .home-header-user .user-profile{
+     right: -78%; 
+     top: 8%;
+    width: 20%;
+}
+
+.home-header .home-nav-links .home-header-user .user-profile{
+     right: -78%; 
+     top: 8%;
+    width: 20%;
+}
+
+.container .proactive-guide{
+   grid-area: proactive-guide;
+   display: block;
+   height: 700px;
+
+}
+
+
+
+
+
+}
+
+
+@media only screen and (min-width: 2000px){
+
+.home-wrapper{
+  width: 70%;
+  margin: auto;
+
+}
+
+.home-header .home-nav-links .notification{
+      top: 5%;
+     right: -50%;
+    width: 15%;
+}
+
+
+.home-header .home-nav-links .home-header-user .user-profile{
+     top: 6%; 
+}
+
+.sticky{
+  top: 30%;
+  right: 97%;
+}
+
+
+}
+
+
+
+@media only screen and (min-width: 2200px){
+
+.home-wrapper{
+  width: 60%;
+  margin: auto;
+
+}
+
+.home-header .home-nav-links .notification{
+      top: 5%;
+     right: -52%;
+    width: 15%;
+}
+
+.home-header .home-nav-links .home-header-user .user-profile{
+     top: 5%;
+    width: 16%;
+}
+
+
+
+}
+
+
+
+
+@media only screen and (min-width: 2560px){
+
+.home-wrapper{
+  width: 50%;
+  margin: auto;
+
+}
+
+.home-header .home-nav-links .notification{
+      top: 4%;
+     right: -61%;
+    width: 10%;
+}
+
+.home-header .home-nav-links .home-header-user .user-profile{
+     right: -82%; 
+     top: 4%;
+    width: 15%;
+}
+
+.sticky{
+  top: 30%;
+  right: 97.5%;
+}
+
+
+
+
+}

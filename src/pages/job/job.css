@@ -1,0 +1,1543 @@
+*{
+   margin: 0;
+   padding: 0;
+   font-family: "Open Sans", sans-serif 
+ !important;
+ box-sizing: border-box;
+ color: #5e595e;
+}
+
+body{
+	background-color: #f7f8fc;
+}
+
+
+
+.job-wrapper{
+  display: block;
+	width: 100%;
+} 
+
+.job-header{
+	position: fixed;
+	z-index: 3000;
+	top: 0;
+	right: 0;
+	left: 0;
+  width: 100%;
+	display: block;
+	padding: 18px 20px;
+	background-color: #0b68e8;
+}
+
+.job-header .job-links{
+  display: none;
+}
+
+
+.job-logo .icon-logo{
+  margin: 10px 0;
+	height: 22px;
+	cursor: pointer;
+	float: left;
+}
+
+.job-logo .text-logo{
+	display: none;
+}
+
+.job-header .job-nav-links {
+     float: right;
+     display: grid;
+     grid-template-columns: 0.5fr 1.5fr;
+     grid-template-areas: "bellImg user";
+}
+
+
+.job-header .job-nav-links  .bellImg{
+  grid-area: bellImg;
+      width: 20px;
+      margin: auto 0 auto 60px;
+      cursor: pointer;
+}
+
+
+.job-header .job-nav-links .notification{
+     display: none;
+     position: fixed;
+     right: 40%;
+     left: 5%;
+     top: 8%;
+     margin: auto;
+     background-color: #fff;
+     padding: 50px 20px;
+    z-index: 2000;
+    width: 66%;
+    border-radius: 4px;
+    box-shadow: 0px 0px 3px #111;
+}
+
+.job-header .job-nav-links .notification .bell-logo{ 
+  background-image: url('../img/bell.png');
+  background-color:#e3eefd;;
+ background-size: 40%;
+ width: 76px;
+ height: 76px;
+ padding: 23px 33px;
+ background-position: center;
+ background-repeat: no-repeat;
+ border-radius: 50%;
+ margin: auto;
+}
+
+
+.job-header .job-nav-links .notification .notification-header{
+    font-size: 16px;
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    
+}
+
+.job-header .job-nav-links .notification .notification-text{
+    font-size: 12px;
+    text-align: center;
+    margin-top: 30px;
+    
+}
+
+
+
+.job-header .job-nav-links .job-header-user{
+     grid-area: user;
+     margin: auto;
+     cursor: pointer;
+}
+
+
+.job-header .job-nav-links .job-header-user img{
+    width: 40px;
+    height: 40px;
+    margin: 0 2px 0 15px;
+}
+
+.job-header .job-nav-links .job-header-user .username{
+    display: none;
+}
+
+.job-header .job-nav-links .job-header-user .d-arr{
+    display: inline-block;
+    margin:auto 0;
+    width: 30px;
+    height: 30px;
+}
+
+.job-header .job-nav-links .job-header-user .user-job{
+    display: none;
+     position: fixed;
+     right: 5%;
+     left: 15%;
+     top: 9%;
+     margin: auto;
+     background-color: #fff;
+     padding: 15px 20px;
+    z-index: 2000;
+    width: 80%;
+    border-radius: 4px;
+    box-shadow: 0px 0px 3px #111;
+}
+
+.job-header .job-nav-links .job-header-user .user-job h4{
+  font-size: 20px;
+  margin: 0 0 10px;
+  font-weight: 700;
+}
+
+.job-header .job-nav-links .job-header-user .user-job p{
+  text-align: center;
+  padding: 0 12px 0 0;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.job-header .job-nav-links .job-header-user .user-job .user-smart-link{
+  display: block;
+background-color: #0b68e8;
+    color:#fff;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 10px 22px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+
+}
+
+
+.job-header .job-nav-links .job-header-user .user-job .user-smart-link:hover{
+  filter: brightness(95%);
+  box-shadow: 0.2px 0.2px 1px #111;
+}
+
+.job-header .job-nav-links .job-header-user .user-job ul{
+  display: block;
+  margin: 10px 0;
+}
+
+.job-header .job-nav-links .job-header-user .user-job ul li{
+    border-top: 1px solid #a6a6a6;
+    padding: 10px 0;
+    list-style: none;
+    cursor: pointer;
+}
+
+.job-header .job-nav-links .job-header-user .user-job ul .hidden{
+    border-top: 1px solid #a6a6a6;
+    padding: 10px 0;
+    list-style: none;
+    cursor: pointer;
+    display: none;
+}
+
+.job-header .job-nav-links .job-header-user .user-job ul li:hover{
+   background-color: #f7f7f7;
+ }
+
+.job-header .job-nav-links .job-header-user .user-job ul li span{
+   background-color: #b1e7c5;
+   padding: 2px 5px;
+   border-radius: 3px;
+}
+
+
+.job-header .job-nav-links .job-header-user .user-job ul li a{
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.job-container{
+  display: block;
+  width: 100%;
+ margin: 60px auto 0;
+ padding: 20px 0;
+}
+
+.job-container .nav-lists{
+ display: block;
+ position: fixed;
+ width: 100%;
+ margin: 0 0 0 30px;
+background-color: #f7f8fc;
+}
+
+.job-container .nav-lists li{
+ font-size: 12px;
+ font-weight: 600;
+ padding: 4px 10px;
+ list-style: none;
+ display: inline-block;
+cursor: pointer;
+text-align: center;
+width: 35%;
+}
+
+.job-container .nav-lists li:hover{
+ border-bottom: 2px solid #0b68e8;
+}
+
+.job-container .nav-lists #saved{
+ border-bottom: 2px solid #0b68e8;
+text-align: center;
+}
+
+.job-container .nav-lists span{
+  background-color: #0b68e8;
+    color: #fff;
+    font-weight: 900;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #0b68e8;
+    border-radius: 50%;
+    padding: 1% 3%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    margin-left: 15px;  
+    box-shadow: 0.2px 0.2px 1px #111;
+}
+
+.job-container .nav-lists p{
+ display: none;
+}
+
+
+.job-container .ext{
+  display: grid;
+  grid-template-columns:2fr 0.9fr 0.6fr;
+  grid-template-areas: "ext-para ext-link ext-img";
+  background-color: #e3eefd;
+  margin: 50px 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 2.5px #d4d8e885;
+  padding: 5px 20px ;
+  grid-gap: 10px;
+}
+
+.job-container .ext p{
+  grid-area: ext-para;
+  font-size: 14px;
+   color: #7b797f;
+}
+
+.job-container .ext p span{
+  font-size: 16px;
+  font-weight: 700;
+  color: #0070cd;
+  cursor: pointer;
+}
+
+.job-container .ext p span:hover{
+ text-decoration: underline
+}
+
+.job-container .ext a{
+  grid-area: ext-link;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  margin: auto;
+  text-align: right;
+}
+
+.job-container .ext a:hover{
+  text-decoration: underline;
+}
+
+.job-container .ext img{
+  grid-area: ext-img;
+  width: 40%;
+  margin: auto;
+  cursor:pointer;
+ transition: background 0.3s ease;
+}
+
+.job-container .ext img:hover{
+   background-color: #fff;
+    border: 1px solid #f2f2f2;
+    border-radius: 3px;
+
+}
+
+.job-container .scroll-div{
+  display: block;
+overflow: auto;
+white-space: nowrap;
+}
+.job-container .scroll-div .divs{
+  display: inline-block;
+    margin: 0 15px;
+    width: 90%;
+    background-color: #eef1fa;
+    border-radius: 4px;
+    min-height: 100vh;
+    height: 100%;
+}
+
+
+.job-container .scroll-div .divs h3{
+ font-size: 14px;
+ font-weight: 600;
+text-align: center;
+margin-top: 10px;
+}
+
+.job-container .scroll-div .divs h3 span{
+box-sizing: border-box;
+margin-left: 12px;
+background-color: #e3eefd;
+text-align: center;
+width: 25px;
+height: 20px;
+border-radius: 50%;
+border: 1px solid #0b68e84d;
+font-size: 16px;
+color: #0b68e8;
+padding: 0 5px;
+}
+
+.job-container .scroll-div .divs p{
+ font-size: 14px;
+ font-weight: 600;
+text-align: center;
+margin-top: 20px;
+color: #7b797f;
+}
+
+.job-container .scroll-div .divs h3 img{
+width: 30px;
+float: right;
+margin:0;
+padding: 0;
+cursor: pointer;
+}
+
+
+.job-container .scroll-div-application{
+  display: none;
+overflow: auto;
+white-space: nowrap;
+width: 100%;
+height: calc(100% + 20px);
+}
+
+.job-container .scroll-div-application .divs{
+  display: inline-block;
+    margin: 0 15px;
+    width: 90%;
+    background-color: #eef1fa;
+    border-radius: 4px;
+    min-height: 100vh;
+    height: 100%;
+}
+
+.job-container .scroll-div-application .divs .works{
+  width: 80%;
+    padding: 12px;
+    height: 120px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 10%);
+    border: none;
+    border-radius: 8px;
+}
+
+.job-container .scroll-div-application .divs .works .logo{
+  width: 15px;
+  height: 15px;
+  float: left;
+  cursor: pointer;
+}
+
+.job-container .scroll-div-application .divs .works .more{
+  width: 20px;
+  float: right;
+}
+
+.job-container .scroll-div-application .divs .works .org-logo{
+  display: block;
+   width: 30px;
+   float: left;
+   margin: 50px 20px 0 0;
+}
+
+.job-container .scroll-div-application .divs .works .tooltip{
+  visibility: hidden;
+  position: absolute;
+  top: 55%;
+  right: 0;
+  left: 5%;
+   display: none;
+  background-color: #5c5c5c;
+   width: 300px;
+  height: 100px;
+   padding: 10px;
+   margin: 0 0 auto;
+   border-radius: 5px;
+   transition: all 0.2s ease-in-out;
+   z-index: 4000;
+ }
+
+.job-container .scroll-div-application .divs .works .tooltip-two{
+  visibility: hidden;
+   position: absolute;
+  top: 55%;
+  right: 0;
+  left: 40%;
+   display: none;
+  background-color: #5c5c5c;
+   width: 300px;
+  height: 100px;
+   padding: 10px;
+   margin: 0 0 auto;
+   border-radius: 5px;
+   transition: all 0.2s ease-in-out;
+   z-index: 4000;
+
+}
+
+.job-container .scroll-div-application .divs .works h6{
+display: block;
+margin: 30px auto 0;
+color: #000000;
+font-size: 14px;
+
+}
+
+.job-container .scroll-div-application .divs .works h6 span{
+color: #464048;
+font-size: 14px;
+font-weight: 400;
+
+}
+
+
+.job-container .scroll-div-application .divs h3{
+ font-size: 14px;
+ font-weight: 600;
+ text-align: center;
+ margin-top: 10px;
+}
+
+.job-container .scroll-div-application .divs h3 span{
+box-sizing: border-box;
+margin-left: 12px;
+background-color: #e3eefd;
+text-align: center;
+width: 25px;
+height: 20px;
+border-radius: 50%;
+border: 1px solid #0b68e84d;
+font-size: 16px;
+color: #0b68e8;
+padding: 0 5px;
+}
+
+.job-container .scroll-div-application .divs p{
+ font-size: 14px;
+ font-weight: 600;
+text-align: center;
+margin-top: 20px;
+color: #7b797f;
+}
+
+.job-container .scroll-div-application .divs h3 img{
+width: 40px;
+float: right;
+padding-right: 20px;
+margin:0;
+cursor: pointer;
+}
+
+
+.add-ext-form{
+  display: none;
+background: #fff;
+ border: 1px solid #dde0e5;
+ box-shadow: 0 2px 20px #d4d8e885;
+ padding: 30px;
+ border-radius: 8px;
+ margin-bottom: 20px;
+ color: #00000099;
+ transition: background-color 0.4s ease-in-out,border-color 0.4s ease-in-out;
+}
+
+.add-ext-form h2{
+  font-size: 17px;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.add-ext-form h4{
+  font-size: 14px;
+    color: #0b68e8;
+    background-color: #fff;
+    border: 2px solid #fff;
+    font-weight: 600;
+    padding: 8px 22px;
+    border: none;
+    border-radius: 25px;
+    width: 140px;
+    cursor: pointer;
+  }
+
+.add-ext-form h4:hover{
+     box-shadow: 0 0 2px #ababab;
+  }
+
+.add-ext-form h4:active{
+  background-color: #ececec;
+}
+
+
+.add-ext-form p{
+  font-size: 14px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.add-ext-form label{
+  font-size: 14px;
+  display: block;
+  cursor: pointer;
+  margin-bottom: 2px;
+  color: #00000099;
+}
+
+.add-ext-form label span{
+color: #da0830;
+}
+
+.add-ext-form input, select, textarea{
+  font-size: 16px;
+  border-radius: 4px;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: none;
+  color: #444;
+  padding: 5px 10px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.add-ext-form input:focus{
+   border: 1px solid #0b68e8;
+}
+
+.add-ext-form .more-inputs{
+  display: none;
+}
+
+.add-ext-form select:focus{
+   border: 1px solid #0b68e8;
+}
+
+.add-ext-form textarea{
+  height: 70px;
+}
+
+.add-ext-form textarea:focus{
+   border: 1px solid #0b68e8;
+}
+
+.add-ext-form .btns{
+display: inline-block;
+margin: 0 0 0 15%;
+
+}
+
+.add-ext-form .btns .btn-one{
+    background-color: #fff;
+    border: 2px solid #0b68e8;
+    color: #0b68e8;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 25px;
+    padding: 10px 20px;
+    width: 120px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.add-ext-form .btns .btn-one:hover{
+  filter: brightness(95%);
+  box-shadow: 0.2px 0.2px 1px #111;
+}
+
+.add-ext-form .btns .btn-one:active{
+  background-color: #ececec;
+  border: 2px solid #ececec;
+}
+
+
+.add-ext-form .btns .btn-two{
+  background-color:#0b68e8;
+  border:2px solid #0b68e8;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 25px;
+  padding: 10px 20px;
+  width: 120px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.add-ext-form .btns .btn-two:hover{
+  filter: brightness(95%);
+  box-shadow: 0.2px 0.2px 1px #111;
+}
+
+.add-ext-form .btns .btn-two:active{
+  filter: brightness(95%);
+  box-shadow: 0.2px 0.2px 1px #111;
+}
+
+
+.bottom-nav{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "home search job s-prof";
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 1px 0 2px #111;
+}
+
+.bottom-nav .home{
+  grid-area: home;
+   display: grid;
+   grid-template-areas: 
+   "home-img"
+   "home-link";
+   width: 20px;
+}
+
+.bottom-nav .home img{
+  grid-area: home-img; 
+  width: 20px;
+ margin: auto;
+ cursor: pointer;
+}
+
+
+.bottom-nav .home a{
+  grid-area: home-link;
+  font-size: 13px;
+  text-decoration: none;
+ margin: 0 18px;
+}
+
+
+.bottom-nav .search{
+  grid-area: search;
+   display: grid;
+   grid-template-areas: 
+   "search-img"
+   "search-link";
+   width: 20px;
+}
+
+.bottom-nav .search img{
+  grid-area: search-img; 
+   border-radius: 50%;
+  width: 20px;
+ margin: auto;
+ cursor: pointer;
+}
+
+.bottom-nav .search a{
+  grid-area: search-link;
+  font-size: 13px;
+  text-decoration: none;
+ margin: 0 18px;
+}
+
+.bottom-nav .job{
+  grid-area: job;
+   display: grid;
+   grid-template-areas: 
+   "job-img"
+   "job-link";
+   width: 50px;
+   margin: auto;
+}
+
+.bottom-nav .job img{
+  grid-area: job-img; 
+  width: 20px;
+ margin: auto;
+ cursor: pointer;
+}
+
+
+.bottom-nav .job a{
+  grid-area: job-link;
+    color: #0b68e8;
+  font-size: 13px;
+  text-decoration: none;
+  margin: auto;
+}
+
+.bottom-nav .s-prof{
+  grid-area: s-prof;
+   display: grid;
+   grid-template-areas: 
+   "s-prof-img"
+   "s-prof-link";
+   width: 20px;
+}
+
+.bottom-nav .s-prof img{
+  grid-area: s-prof-img; 
+  width: 20px;
+ margin: auto;
+ cursor: pointer;
+}
+
+
+.bottom-nav .s-prof a{
+  grid-area: s-prof-link;
+  font-size: 13px;
+  text-decoration: none;
+ margin: 0 18px;
+}
+
+
+
+
+@media only screen and (min-width: 500px){
+
+.job-header .job-nav-links .notification{
+     right: 5%;
+     left: 5%;
+     top: 15%;
+     width: 50%;  
+}
+
+.job-header .job-nav-links .job-header-user .user-job{
+     left: 0%;
+     top: 18%;
+}
+
+.job-container .ext p{
+ padding: 2.5px 0;
+}
+
+.job-container .ext img{
+  width: 30%;
+}
+
+
+}
+
+@media only screen and (min-width: 640px){
+
+.job-logo .icon-logo{
+	display: none;
+    }
+
+.job-header .job-nav-links .job-header-user .user-job ul .hidden{
+    display: block;
+}
+
+.job-logo .text-logo{
+	display: block;
+	height: 16px;
+	cursor: pointer;
+	float: left;
+  margin: 10px 0;
+}
+ 
+.job-header .job-nav-links {
+      width: 400px;
+}
+
+.job-header .job-nav-links .notification{
+    right: 38%;
+    width: 40%;  
+}
+
+.job-header .job-nav-links  .bellImg{
+      width: 20px;
+      margin: auto 0 auto 100px;
+      cursor: pointer;
+}
+
+.job-header .job-nav-links .job-header-user img{
+   display: inline-block;
+}
+
+.job-header .job-nav-links .job-header-user .username{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    overflow: hidden;
+    margin: 10px 0 0 0;
+}
+
+.job-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "ext ext"
+  "nav-lists nav-lists"
+  "ext-form ext-form"
+  "scroll-div scroll-div"
+  "scroll-div-application scroll-div-application";
+  margin: 50px auto 0;
+}
+
+
+.job-container .ext{
+ grid-area: ext;
+}
+
+.job-container .ext p{
+padding: 4px;
+}
+
+.job-container .ext img{
+  width: 20%;
+}
+
+
+.job-container .scroll-div{
+grid-area: scroll-div;
+}
+
+.job-container .scroll-div .divs{
+    width: 50%;
+}
+
+.job-container .scroll-div .divs h3{
+   text-align: left;
+   font-weight: 600;
+   margin: 20px 0 0 10px;
+}
+
+.job-container .scroll-div .divs p{
+   text-align: left;
+     font-weight: 600;
+   margin-left: 10px;
+}
+
+.job-container .scroll-div-application{
+grid-area: scroll-div-application;
+}
+
+.job-container .scroll-div-application .divs{
+    width: 50%;
+}
+
+.job-container .scroll-div-application .divs h3{
+   text-align: left;
+   font-weight: 600;
+   margin: 20px 0 0 10px;
+}
+
+.job-container .scroll-div-application .divs p{
+   text-align: left;
+     font-weight: 600;
+   margin-left: 10px;
+}
+
+.add-ext-form{
+grid-area: ext-form;
+margin: 20px;
+}
+
+
+.job-container .nav-lists{
+  grid-area: nav-lists;
+ position: static;
+ margin: 0 auto 20px;
+ width: 100%;
+background-color: #f7f8fc;
+}
+
+.job-container .nav-lists li:hover{
+  border-bottom: 4px solid #0b68e8;
+}
+
+.job-container .nav-lists #saved{
+   font-size: 16px;
+   font-weight: 400;
+   width: 20%;
+   margin-left: 10px;
+   border-bottom: 4px solid #0b68e8;
+}
+
+.job-container .nav-lists #my-app{
+   font-size: 16px;
+   font-weight: 400;
+    width: 25%;
+}
+
+.job-container .nav-lists span{
+  display: none;
+}
+
+.job-container .nav-lists p{
+ display: block;
+  background-color:#0b68e8;
+  border:2px solid #0b68e8;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 25px;
+  margin-top: 40px;
+  margin-right: 20px;
+  padding: 10px;
+  width: 180px;
+  text-align: center;
+ float:right;
+ cursor: pointer;
+}
+
+.job-container .nav-lists p:hover{
+filter: brightness(95%);
+  box-shadow: 0.2px 0.2px 1px #111;
+}
+
+.add-ext-form .btns{
+display: inline-block;
+margin: 0 0 0 25%;
+
+}
+
+.bottom-nav{
+ display: none;
+}
+
+}
+
+@media only screen and (min-width: 737px){
+
+
+.job-header .job-nav-links .job-header-user .d-arr{
+   margin: auto 10px auto 0;
+}
+
+.job-header .job-nav-links .job-header-user .user-job{
+     right: -45%; 
+     top: 18%;
+    width: 50%;
+}
+
+
+.job-header .job-nav-links .notification{
+     right: 20%;
+    width: 35%;
+}
+
+.job-container .nav-lists #saved{
+   width: 15%;
+   margin-right: 25px;
+}
+
+.job-container .nav-lists #my-app{
+    width: 20%;
+}
+
+.add-ext-form .btns{
+display: inline-block;
+margin: 0 0 0 30%;
+
+}
+
+
+
+}
+
+
+
+@media only screen and (min-width: 960px){
+
+.job-header{
+  padding: 15px 20px;
+
+}
+
+.job-header .job-nav-links  .bellImg:hover{
+  width: 22px;
+}
+
+
+.job-logo .text-logo{
+   margin: 20px 0 0;
+}
+
+.job-header .job-nav-links .job-header-user .user-job{
+     right: -56%; 
+     top: 13%;
+    width: 40%;
+}
+
+
+.job-header .job-nav-links .notification{
+     right: -10%;
+     top: 11%;
+    width: 25%;
+}
+
+.job-header .job-links{
+  display: inline-block;
+  margin: auto 0 auto 60px;
+}
+
+.job-header .job-links li{
+  display: inline-block;
+  list-style: none;
+ padding: 0 18px 0;
+}
+
+.job-header .job-links li a{
+  display: inline-block;
+    font-size: 16px;
+    color: #fff;
+    overflow: hidden;
+    margin: 12px 0 0;
+   text-decoration: none;
+   transition: all 0.1s ease-in-out;
+}
+
+.job-header .job-links li a:hover{
+  border-bottom: 4px solid #fff;
+}
+
+.job-header .job-links li .active-page{
+  border-bottom: 4px solid #fff;
+}
+
+.job-container .nav-lists #saved{
+   width: 12%;
+   margin-left: 20px;
+}
+
+.job-container .ext{
+  display: grid;
+  grid-template-columns:1.8fr 0.5fr 0.6fr;
+  grid-template-areas: "ext-para ext-link ext-img";
+  background-color: #e3eefd;
+  margin: 50px 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 2.5px #d4d8e885;
+  padding: 10px 20px ;
+  grid-gap: 10px;
+}
+
+.job-container .ext img{
+  grid-area: ext-img;
+  width: 15%;
+  margin: auto;
+ transition: background 0.3s ease;
+}
+
+.add-ext-form .btns{
+display: block;
+float: right;
+
+}
+
+
+.job-container .nav-lists{
+ grid-template-columns: 0.4fr 1.7fr;
+ }
+
+ .job-container .nav-lists #saved{
+   width: 12%;
+   margin-right: 0px;
+}
+
+.job-container .nav-lists #my-app{
+    width: 15%;
+}
+
+
+.job-container .scroll-div .divs{
+    width: 35%;
+}
+
+.job-container .scroll-div-application .divs{
+    width: 35%;
+}
+
+.job-container .scroll-div-application .divs .works .tooltip{
+  visibility: visible;
+}
+
+.job-container .scroll-div-application .divs .works .tooltip p{
+     margin: auto;
+  text-align: left;
+  line-height: 20px;
+  color: white;
+   font-size: 14px;
+   font-weight: thin;
+   text-decoration: none;
+}
+
+.job-container .scroll-div-application .divs .works .tooltip-two{
+  visibility: visible;
+}
+
+.job-container .scroll-div-application .divs .works .tooltip-two p{
+     margin: auto;
+  text-align: left;
+  line-height: 20px;
+  color: white;
+   font-size: 14px;
+   font-weight: thin;
+   text-decoration: none;
+}
+
+
+}
+
+@media only screen and (min-width: 1000px){
+
+.job-header .job-nav-links  .bellImg:hover{
+  width: 22px;
+}
+
+.job-container .ext{
+  display: grid;
+  grid-template-columns:1.5fr 0.4fr 0.3fr;
+  grid-template-areas: "ext-para ext-link ext-img";
+  background-color: #e3eefd;
+  margin: 50px 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 2.5px #d4d8e885;
+  padding: 10px 20px;
+  grid-gap: 10px;
+}
+
+.job-container .ext p{
+font-size: 16px;
+line-height: 20px;
+}
+
+.job-container .ext a{
+  font-weight: 800;
+}
+
+.job-container .ext img{
+  grid-area: ext-img;
+  width: 15%;
+  margin: auto;
+ transition: background 0.3s ease;
+}
+
+
+}
+
+
+@media only screen and (min-width: 1080px){
+ 
+
+.job-header .job-nav-links .notification{
+     right: -15%;
+}
+
+.job-header .job-nav-links  .bellImg:hover{
+  width: 22px;
+}
+
+
+.job-header .job-nav-links .job-header-user .user-job{
+     right: -67%; 
+     top: 11%;
+    width: 30%;
+}
+
+.job-container .ext{
+  display: grid;
+  grid-template-columns:3fr 1fr 0.4fr;
+  grid-template-areas: "ext-para ext-link ext-img";
+  background-color: #e3eefd;
+  margin: 20px 20px;
+  padding: 10px 20px;
+  grid-gap: 10px;
+}
+
+.job-container .ext img{
+  grid-area: ext-img;
+  width: 20%;
+  margin: auto;
+ transition: background 0.3s ease;
+}
+
+
+.add-ext-form .btns{
+display: block;
+float: right;
+}
+
+.job-container .scroll-div .divs{
+    width: 30%;
+}
+
+.job-container .scroll-div-application .divs{
+    width: 30%;
+}
+
+.job-container .scroll-div-application .divs .works .tooltip{
+  position: absolute;
+  top: 35%;
+  right: 0;
+  left: 5%;
+}
+
+.job-container .scroll-div-application .divs .works .tooltip-two{
+  position: absolute;
+  top: 35%;
+  right: 0;
+  left: 40%;
+}
+
+
+
+}
+
+
+@media only screen and (min-width: 1400px){
+
+
+.job-header .job-nav-links .notification{
+     right: -32%;
+     top: 7%;
+   width: 20%;
+  
+}
+
+.job-header .job-nav-links  .bellImg:hover{
+  width: 22px;
+}
+
+
+.job-header .job-nav-links .job-header-user .user-job{
+     right: -70%; 
+     top: 9%;
+    width: 25%;
+}
+
+.job-container .ext{
+  grid-template-columns:5fr 0.9fr 0.4fr;
+}
+
+.job-container .nav-lists #saved{
+   width: 8%;
+   margin-right: 0px;
+}
+
+.job-container .nav-lists #my-app{
+    width: 10%;
+}
+
+.job-container .scroll-div-application .divs .works .tooltip{
+  position: absolute;
+  top: 28%;
+  right: 0;
+  left: 5%;
+}
+
+.job-container .scroll-div-application .divs .works .tooltip-two{
+  position: absolute;
+  top: 30%;
+  right: 0;
+  left: 35%;
+
+}
+
+
+}
+
+@media only screen and (min-width: 1600px){
+
+
+.job-header .job-nav-links .notification{
+     right: -38%;  
+}
+
+.job-header .job-nav-links  .bellImg:hover{
+  width: 22px;
+}
+
+.job-header .job-nav-links .job-header-user .user-job{
+     right: -78%; 
+     top: 8%;
+    width: 20%;
+}
+
+.job-container .ext{
+  grid-template-columns:6fr 0.9fr 0.4fr;
+}
+
+.job-container .scroll-div-application .divs .works .tooltip{
+  position: absolute;
+  top: 25%;
+  right: 0;
+  left: 5%;
+}
+
+.job-container .scroll-div-application .divs .works .tooltip-two{
+  position: absolute;
+  top: 26%;
+  right: 0;
+  left: 35%;
+}
+
+
+}
+
+@media only screen and (min-width: 1800px){
+
+.job-header .job-nav-links .notification{
+     right: -40%;
+}
+
+.job-header .job-nav-links .job-header-user .user-job{
+     right: -78%; 
+     top: 8%;
+    width: 20%;
+}
+
+.job-header .job-nav-links .job-header-user .user-job{
+     right: -78%; 
+     top: 8%;
+    width: 20%;
+}
+
+.job-header .job-nav-links  .bellImg:hover{
+  width: 22px;
+}
+
+.job-container .scroll-div-application .divs .works .tooltip{
+  position: absolute;
+  top: 22%;
+  right: 0;
+  left: 5%;
+}
+
+.job-container .scroll-div-application .divs .works .tooltip-two{
+  position: absolute;
+  top: 24%;
+  right: 0;
+  left: 35%;
+}
+
+
+}
+
+
+@media only screen and (min-width: 2000px){
+
+
+.job-header .job-nav-links .notification{
+      top: 5%;
+     right: -50%;
+    width: 15%;
+}
+
+
+.job-header .job-nav-links .job-header-user .user-job{
+     top: 6%; 
+}
+
+.job-header .job-nav-links  .bellImg:hover{
+  width: 22px;
+}
+
+.job-container .nav-lists #saved{
+   width: 7%;
+   margin-right: 0px;
+}
+
+.job-container .nav-lists #my-app{
+    width: 8%;
+}
+
+.job-container .scroll-div-application .divs .works .tooltip{
+  position: absolute;
+  top: 20%;
+  right: 0;
+  left: 5%;
+}
+
+.job-container .scroll-div-application .divs .works .tooltip-two{
+  position: absolute;
+  top: 22%;
+  right: 0;
+  left: 35%;
+}
+
+
+
+
+}
+
+
+
+@media only screen and (min-width: 2200px){
+
+
+.job-header .job-nav-links .notification{
+      top: 5%;
+     right: -52%;
+    width: 15%;
+}
+
+.job-header .job-nav-links .job-header-user .user-job{
+     top: 5%;
+    width: 16%;
+}
+
+.job-header .job-nav-links  .bellImg:hover{
+  width: 22px;
+}
+
+
+.job-container .nav-lists #saved{
+   width: 5%;
+   margin-right: 0px;
+}
+
+.job-container .nav-lists #my-app{
+    width: 7%;
+}
+
+.job-container .scroll-div-application .divs .works .tooltip{
+  position: absolute;
+  top: 18%;
+  right: 0;
+  left: 5%;
+}
+
+.job-container .scroll-div-application .divs .works .tooltip-two{
+  position: absolute;
+  top: 20%;
+  right: 0;
+  left: 35%;
+}
+
+
+
+}
+
+
+@media only screen and (min-width: 2560px){
+
+
+.job-header .job-nav-links .notification{
+      top: 4%;
+     right: -61%;
+    width: 10%;
+}
+
+.job-header .job-nav-links .job-header-user .user-job{
+     right: -82%; 
+     top: 4%;
+    width: 15%;
+}
+
+.job-header .job-nav-links  .bellImg:hover{
+  width: 22px;
+}
+
+.job-container .scroll-div-application .divs .works .tooltip{
+  position: absolute;
+  top: 14%;
+  right: 0;
+  left: 5%;
+}
+
+.job-container .scroll-div-application .divs .works .tooltip-two{
+  position: absolute;
+  top: 14%;
+  right: 0;
+  left: 35%;
+}
+
+
+}
+
+

@@ -1,0 +1,455 @@
+*{
+   margin: 0;
+   padding: 0;
+   font-family: "Open Sans", 
+-apple-system, BlinkMacSystemFont, 
+"Segoe UI", Roboto, Oxygen, Ubuntu,
+ Cantarell, "Helvetica Neue", sans-serif 
+ !important;
+ box-sizing: border-box;
+ color: #5e595e;
+}
+
+body{
+	background-color: #f7f8fc;
+}
+
+.landing-wrapper{
+	width: 100%;
+  background-color: #f7f8fc;
+}
+
+.landing-nav{
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	right: 0;
+	left: 0;
+	display: block;
+	padding: 21px 20px;
+	background-color: #0b68e8;
+}
+
+.landing-logo .icon-logo{
+	height: 16px;
+	cursor: pointer;
+	float: left;
+}
+
+.landing-logo .text-logo{
+	display: none;
+}
+
+
+
+.landing-nav-links{
+   float: right;
+   display: block;
+}
+
+.landing-nav-links .signin{
+   margin-right: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 6px 32px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.landing-nav-links .signup{
+	 background-color: #fff;
+    color:#0b68e8;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 6px 22px;
+    font-size: 14px;
+    cursor: pointer;
+
+}
+
+.landing-nav-links .signup:hover{
+    box-shadow: 0px 0.5px 1px #111;
+}
+
+
+.landing-header{
+	background-color: #0b68e8; 
+	margin-top: 50px;
+	padding: 30px 0;
+}
+
+.landing-header h2{
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+}
+
+.landing-header p{
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	margin-top: 5px;
+}
+
+.landing-track{
+  padding: 50px 0;
+}
+
+.landing-track img{
+	display: block;
+  width: 300px;
+  margin: 0 auto;
+  border: 0;
+
+}
+
+.landing-track-text h2{
+   text-align: center;
+   font-size: 18px;
+   margin: 10px 0;
+   color: #4a4a4a;
+   padding: 0 20px;
+}
+
+
+.landing-track-text p{
+  font-size: 16px;
+  margin: 20px 0;
+  text-align: center;
+  padding: 0 20px;
+}
+
+
+.landing-track-btn{
+	cursor: pointer;
+    text-align: center;
+}
+
+.landing-track-btn a{
+	 background-color: #0b68e8;
+    color:#fff;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 6px 22px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.landing-track-btn a:hover{
+	filter: brightness(95%);
+	box-shadow: 0.2px 0.2px 1px #111;
+}
+
+.landing-profile{
+	padding: 50px 0;
+	background-color: #e3eefd;
+}
+
+
+.landing-profile img{
+	display: block;
+  width: 300px;
+  margin: 0 auto;
+  border: 0;
+}
+
+.landing-profile-text h2{
+    text-align: center;
+   font-size: 18px;
+   margin: 10px 0;
+   color: #4a4a4a;
+}
+
+.landing-profile-text p{
+  font-size: 16px;
+  margin: 20px 0;
+  text-align: center;
+  padding: 0 20px;
+}
+
+
+
+
+.landing-profile-btn{
+	cursor: pointer;
+    text-align: center;
+}
+
+.landing-profile-btn a{
+	 background-color: #0b68e8;
+    color:#fff;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 6px 22px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.landing-profile-btn a:hover{
+	filter: brightness(95%);
+	box-shadow: 0.2px 0.2px 1px #111;
+}
+
+
+/*bhsjsjjsjsj*/
+
+.landing-search{
+	padding: 50px 0;
+}
+
+
+.landing-search img{
+	display: block;
+  width: 300px;
+  margin: 0 auto;
+  border: 0;
+}
+
+.landing-search-text h2{
+    text-align: center;
+   font-size: 18px;
+   margin: 10px 0;
+   color: #4a4a4a;
+}
+
+.landing-search-text p{
+  font-size: 16px;
+  margin: 20px 0;
+  text-align: center;
+  padding: 0 20px;
+}
+
+
+
+
+.landing-search-btn{
+	cursor: pointer;
+    text-align: center;
+}
+
+.landing-search-btn a{
+	 background-color: #0b68e8;
+    color:#fff;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 6px 22px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.landing-search-btn a:hover{
+	filter: brightness(95%);
+	box-shadow: 0.2px 0.2px 1px #111;
+}
+
+.landing-footer{
+	background-color: #0b68e8;
+	padding: 20px 5px;
+	text-align: center;
+	margin-bottom: 80px;
+}
+
+.landing-footer-links{
+	margin: 5px 0 30px;
+}
+
+.landing-footer-links .signin{
+	 margin-right: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 6px 32px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.landing-footer-links .signup{
+	  background-color: #fff;
+    color:#0b68e8;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 6px 22px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.landing-footer-links .signup:hover{
+    box-shadow: 0px 0.5px 1px #111;
+}
+
+
+.landing-footer img{
+	height: 16px;
+	margin: 0 auto;
+}
+
+
+@media only screen and (min-width: 640px){
+   .landing-logo .icon-logo{
+	display: none;
+    }
+
+	.landing-logo .text-logo{
+	display: block;
+	height: 16px;
+	cursor: pointer;
+	float: left;
+    }
+
+    .landing-track{
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      grid-template-areas: "landing-track-text landing-track-img";
+}
+
+.landing-track img{
+   grid-area: landing-track-img;
+   width: 520px;
+
+}
+
+.landing-track h2{
+	font-size: 20px;
+	text-align: left;
+}
+
+.landing-track p{
+	text-align: left;
+}
+
+.landing-track-btn{
+	padding: 0 20px;
+    text-align: left;
+}
+
+.landing-track-text{
+	grid-area: landing-track-text;
+	 margin: auto;
+}
+
+.landing-profile img{
+  width: 520px;
+}
+
+.landing-profile-text{
+margin: auto;
+}
+  
+
+.landing-search {
+	display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      grid-template-areas: "landing-search-text landing-search-img";
+}
+
+.landing-search img{
+	grid-area: landing-search-img;
+	width: 520px;
+
+}
+
+.landing-search-text{
+	grid-area: landing-search-text;
+	 margin: auto;
+}
+
+.landing-search h2{
+	padding: 0 20px;
+	font-size: 20px;
+	text-align: left;
+}
+
+.landing-search p{
+	text-align: left;
+}
+
+.landing-search-btn{
+	padding: 0 20px;
+    text-align: left;
+}
+
+
+}
+
+
+@media only screen and (min-width: 960px){
+
+.landing-header h2{
+	font-size: 33px;
+	padding: 5px 20px 0;
+	text-align: left;
+}
+
+.landing-header p{
+	font-size: 18px;
+	padding: 0 20px;
+	text-align: left;
+
+}
+
+.landing-track-text h2{
+	font-size: 25px;
+}
+
+
+.landing-profile{
+	padding: 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: "landing-profile-img landing-profile-text";
+}
+
+
+.landing-profile img{
+	grid-area: landing-profile-img;
+	width: 520px;
+}
+
+.landing-profile-text {
+    grid-area: landing-profile-text; 
+    padding: 0 30px;
+
+}
+
+.landing-profile-text h2{
+	font-size: 25px;
+}
+
+.landing-profile-text p{
+	text-align: left;
+}
+
+.landing-profile-btn {
+	text-align: left;
+	 padding: 0 20px;
+}
+
+.landing-search-text h2{
+	font-size: 25px;
+
+}
+
+
+
+
+
+
+
+
+
+
+}
